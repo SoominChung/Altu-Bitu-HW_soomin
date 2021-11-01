@@ -8,7 +8,7 @@
 
 using namespace std;
 typedef pair<int,int> ci; //row, col 저장하기 위한 pair
-//vector<bool> visited; // (i,j)에 대한 방문 체크 arr 만들어서
+
 int visited[50][50]; //방문 체크
 //int map[50][50];
 /*
@@ -20,6 +20,8 @@ int visited[50][50]; //방문 체크
  *
  * out : 각 테스트 케이스에 대해 섬의 개수 출력하기
  */
+
+// 참고 : https://romanceboong.tistory.com/entry/%EB%B0%B1%EC%A4%80-4963%EB%B2%88-%EB%AC%B8%EC%A0%9C-%EC%84%AC%EC%9D%98-%EA%B0%9C%EC%88%98
 
 void dfsRecur(int i, int j, int n, int m,vector<vector<int>> &map){
     visited[i][j]=1; //방문한 곳 표시하기
